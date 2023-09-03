@@ -134,7 +134,7 @@ alibabacloud_transfer() {
   write_log 12 "Error in 'alibabacloud_transfer()' - program coding error"
 }
 
-local __REQUEST_URL="https://alidns.aliyuncs.com"
+local __REQUEST_URL="alidns.aliyuncs.com"
 local __REQUEST_TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 local __UUID="$(cat /proc/sys/kernel/random/uuid)"
 # All plaintext parameters are pre-sorted and pre-encoded, we only use two APIs, no need to sort in the shell script...Well, actually I'm too lazy to do it
